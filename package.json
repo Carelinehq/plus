@@ -44,8 +44,8 @@
     "whatwg-url": "14.0.0"
   },
   "dependencies": {
-  "@medplum/core": "^latest",
-  "@medplum/definitions": "^latest"
+  "@medplum/core": "4.3.4",
+  "@medplum/definitions": "4.3.4"
 },
   "devDependencies": {
     "@babel/core": "7.28.0",
