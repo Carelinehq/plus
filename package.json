@@ -43,6 +43,10 @@
     "rollup": "4.44.2",
     "whatwg-url": "14.0.0"
   },
+  "dependencies": {
+  "@medplum/core": "^latest",
+  "@medplum/definitions": "^latest"
+},
   "devDependencies": {
     "@babel/core": "7.28.0",
     "@babel/preset-env": "7.28.0",
