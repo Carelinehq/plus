@@ -1,0 +1,13 @@
+{
+  "name": "medplum-server-host",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@medplum/server": "4.3.6"
+  },
+  "scripts": {
+    "start": "medplum start file:./medplum.config.json",
+    "migrate": "medplum migrate file:./medplum.config.json"
+  }
+}

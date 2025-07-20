@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://carelineplus-server.onrender.com",
+  "adminEmail": "carelinehq@gmail.com",
+  "adminPassword": "Uninvited1!",
+  "database": {
+    "host": "${PGHOST}",
+    "port": 5432,
+    "username": "${PGUSER}",
+    "password": "${PGPASSWORD}",
+    "dbname": "${PGDATABASE}"
+  },
+  "redis": {
+    "host": "${REDISHOST}",
+    "port": 6379,
+    "password": "${REDISPASSWORD}"
+  }
+}
