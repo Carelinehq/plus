@@ -21,17 +21,20 @@
   "defaultBotRuntimeVersion": "vmcontext",
   "allowedOrigins": "*",
   "introspectionEnabled": true,
+  "baseUrl": "https://carelineplus-server.onrender.com",
+  "adminEmail": "carelinehq@gmail.com",
+  "adminPassword": "Uninvited1!",
   "database": {
-    "host": "localhost",
+    "host": "dpg-d1rvh7qli9vc73963lb0-a",
     "port": 5432,
-    "dbname": "medplum",
-    "username": "medplum",
-    "password": "medplum"
+    "username": "medplum_db_user",
+    "password": "xYvmxoVWLyjwrOXXTtfvH2vD4i55J0rs",
+    "dbname": "medplum_db"
   },
   "redis": {
-    "host": "localhost",
+    "host": "fresh-finch-50931.upstash.io",
     "port": 6379,
-    "password": "medplum"
+    "password": "AcbzAAIjcDFmOTRjZGNhYWY5NTg0ODAwYjYwNDQ0ZjhmNDg2ZDNiN3AxMA"
   },
   "bullmq": {
     "removeOnFail": { "count": 1 },
