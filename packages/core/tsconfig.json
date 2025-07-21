@@ -1,12 +1,32 @@
+// packages/core/tsconfig.json
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.json", // Or whatever your base tsconfig is
   "compilerOptions": {
-    "module": "es2020",
-    "types": ["jest", "vite/client"],
-    "lib": ["esnext", "dom"],
-    "outDir": "dist/types",
-    "noEmit": false,
-    "emitDeclarationOnly": true
+    "outDir": "dist",
+    "rootDir": "src",
+    "lib": ["ES2021", "DOM"], // Ensure these are present
+    "types": ["node", "jest", "pdfmake"], // <--- IMPORTANT: Add "node" and "pdfmake" here
+    "composite": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "moduleResolution": "node", // Ensure this is "node" or "bundler"
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2021" // Or ESNext
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src"],
+  "references": [
+    { "path": "../definitions" },
+    { "path": "../fhirtypes" }
+  ]
 }
