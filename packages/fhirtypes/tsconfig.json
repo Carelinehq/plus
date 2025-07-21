@@ -1,8 +1,27 @@
 {
+  "extends": "../../tsconfig.json", // Assuming it extends a root tsconfig
   "compilerOptions": {
-    "noEmit": true,
-    "skipLibCheck": false,
-    "typeRoots": ["dist"]
+    "outDir": "dist", // Specify an output directory for compiled files
+    "rootDir": "src",  // Specify the root directory of your source files
+    "composite": true, // <--- ADD THIS LINE: Essential for project references
+    "declaration": true, // <--- ADD THIS LINE: To emit .d.ts files required by composite projects
+    "declarationMap": true, // Optional, but good for debugging
+    "noEmit": false,   // <--- CHANGE THIS: Must be false when composite is true
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2021" // Ensure a modern target
   },
-  "include": ["dist"]
+  "include": ["src"], // Point to the source files, not just dist
+  "references": [] // No references needed here, but keeping the block for consistency
 }
