@@ -9,10 +9,10 @@ echo "Running npm ci…"
 npm ci
 
 echo "Installing root‑level extra types…"
-npm install --no-save @types/jest vite @types/node
+npm install --no-save @types/jest vite @types/node @types/pdfmake # Added @types/pdfmake
 
 echo "Installing extra types inside packages/core…"
-npm --workspace packages/core install --no-save @types/jest vite @types/node
+npm --workspace packages/core install --no-save @types/jest vite @types/node @types/pdfmake # Added @types/pdfmake
 
 echo "Running turbo build…"
 npx turbo run build --filter=@medplum/server
